@@ -1,0 +1,20 @@
+{% extends "admin_admin_index.html" %} {% block title%}POST_ANNOUNCEMENT{% endblock%}
+{% block content %}
+<div class="upload">
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('views.post_announcement') }}">
+        <div>
+            <input type="date" name="date" required>
+        </div>
+        <div>
+            <label>Announcement PDF</label>
+        </div>
+        <div>
+            <input class="file" type="file" name="file" accept=".pdf" required>
+        </div>
+        <div>
+            <button type="submit">Upload Announcement</button>
+        </div>
+    </form>
+</div>
+
+{%endblock%}

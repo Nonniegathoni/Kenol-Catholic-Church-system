@@ -1,0 +1,37 @@
+{% extends "user_user_index.html" %}{% block title %}MASS_BOOKINGS{% endblock %}
+{% block content %}
+<div class="mass_booking_content">
+    <h2>BOOKING FOR MASS</h2>
+    <form method="post">
+        <div>
+            <input type="text" name="firstname" required="">
+            <label>First Name</label>
+        </div>
+        <br><br>
+        <div>
+            <input type="text" name="lastname" required="">
+            <label>Last Name</label>
+        </div>
+        <br><br>
+        <div>
+            <input type="text" name="scc" required="">
+            <label>SCC</label>
+        </div>
+        <br><br>
+        <div>
+            <input type="tel" name="phone" required="">
+            <label>Phone</label>
+        </div>
+        <br><br>
+        <div>
+            <input type="date" name="date" required="">
+            <label>Date of the Mass</label>
+        </div>
+        <br><br>
+        <div>
+            <button type="submit">BOOK MASS</button>
+        </div>
+        <br><br>
+    </form>
+</div>
+{% endblock %}

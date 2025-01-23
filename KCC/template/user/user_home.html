@@ -1,0 +1,101 @@
+{% extends "user_user_index.html" %} {% block title%}HOME{% endblock%}
+{% block content %}
+<div class="home_content">
+    <div class="image">
+        <h1>WELCOME TO KENOL CATHOLIC CHURCH</h1>
+    </div>
+    <h3>MINISRIES AND GROUPS</h3>
+    <div class="ministry">
+        <div class="youth">
+           
+            <h2>Youth Ministry</h2>
+            <img src="{{url_for('static', filename='youth.jpg')}}">
+            
+            <p>Greetings. We welcome you all to grow with spiritually and mentally together here at Kenol Catholic Church Youth Group. <a href="/ministries">Click to see more activities</p></a>           
+        </div>
+        <div class="pmc">
+            <h2>PMC Ministry</h2>
+            <img src="{{url_for('static', filename='pmc.jpg')}}">
+            <p>Greetings. We welcome you all to grow with spiritually and mentally together here at Kenol Catholic Church PMC Group. <a href="/ministries">Click to see more activities</p></a>          
+        </div>
+        <div class="yaca">
+            <h2>Yaca Ministry</h2>
+            <img src="{{url_for('static', filename='cma.jpg')}}">
+            <p>Greetings. We welcome you all to grow with spiritually and mentally together here at Kenol Catholic Church YACA Group.<a href="/ministries">Click to see more activities</p></a>          
+
+        </div>
+        <div class="cma">
+            
+            <h2>CMA Ministry</h2>
+            <img src="{{url_for('static', filename='cma.jpg')}}">
+            <p>Greetings. We welcome you all to grow with spiritually and mentally together here at Kenol Catholic Church CMA Group. <a href="/ministries">Click to see more activities</p></a>          
+ 
+            </a>          
+        </div>
+        <div class="cwa">
+            <h2>CWA Ministry</h2>
+            <img src="{{url_for('static', filename='cwa.jpg')}}">
+            <p>Greetings. We welcome you all to grow with spiritually and mentally together here at Kenol Catholic Church CWA Group.<a href="/ministries">Click to see more activities</p></a>           
+        </div>
+        
+    </div>
+    <h3>RELEVANT INFORMATION</h3>
+    <div class="aboutus">
+        <div class="brief_history">
+            <h2>Brief History</h2>
+            <img src="{{url_for('static', filename='church.jpg')}}">
+
+            <P>Kenol Catholic Church was commisioned in the year 2012. <a href="/aboutus">Click to learn more.</P></a>    
+        </div>
+        <div class="location">
+            <h2>Location</h2>
+            <p>See where we are located</p>  
+                  
+        </div>
+        <div class="Leader_message">
+            <h2>Message from the Chairperson</h2>
+            <img src="{{url_for('static', filename='registeruser.jpg')}}">
+            
+            <p>Greetings. I welcome you to Kenol Catholic Church. Join as as we worship and get blessed together.<a href="/aboutus">Click to learn more.</a></p>           
+        </div>
+    </div>
+    <h3>EVENTS</h3>
+    <div class="events">
+        <div class="event1">
+            
+            <h2>Upcoming events</h2>
+            <ol>
+                <li>CHRISMASS VIRGIL.<a href="/events"> Click here to see event</a></li>
+                <LI>CHOIR DIOCESS COMPETITIONS. <a href="/events"> Click here to see event</a></LI>
+            </ol>
+            <a href="/events"><P>Click here to see upcoming events</P></a>
+        </div>
+        <div class="event2">
+            <h2>Special events</h2>
+            <OL>
+                <li>CMA HARAMBEE. <a href="/events"> Click here to see event</a></li>
+                <li>FAMILY DAY. <a href="/events"> Click here to see event</a></li>
+            </OL>
+            <a href="/events"><p>Click here to see Special events</p></a>
+        </div>
+    </div>
+    <div class="worship">
+        <div class="adoration">
+            <a href="/worship">
+            <h2>SPIRITUAL ENRICHMENT</h2>
+            <ol>
+                <a href="https://youtu.be/Xye3ZcfWxuM?si=4HYu61KrgaNks5qW" taget="_blank"><li>STAGES OF SPIRIRTUAL LIFE</li></a>
+                <a href="https://youtu.be/DNFpcUp5nBw?si=C1morhjbzgWeyugc" taget="_blank"><li>KNOW MORE ABOUT SAINTS</li></a>
+                <a href="https://youtu.be/Xye3ZcfWxuM?si=4HYu61KrgaNks5qW" taget="_blank"><li>MORNING PRAYERS</li></a>
+                <a href="https://youtu.be/ClwGc_ZPmlQ?si=RbY-KUfERf3yhQfP" taget="_blank"><li>UPLIFTING SONGS</li></a>
+                <a href="https://www.youtube.com/live/olUO2P0UmyA?si=NXRc2zzEmphvA_1G" taget="_blank"><li>LIVE STREAM MASS</li></a>
+            </ol>
+        </div>
+        <div class="mass_schedule">
+            <h2>MASS SCHEDULE</h2>
+            <p><h4>First Mass</h4><h4>Sunday: 7:00am - 9:00</h4><h4>Second Mass</h4><h4>Sunday: 9:00am - 11:00</h4></p>
+            <p></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

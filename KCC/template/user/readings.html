@@ -1,0 +1,14 @@
+{% extends "user_user_index.html" %}{% block title %}READINGS{% endblock %}
+{% block content %}
+<div class="user_dialy_readings">
+    <form method="post" action="/getreadings">
+        <h3>get weekly readings</h3>
+        <div>
+            <label for="date">Enter Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        
+        <button type="submit">Download PDF</button>
+    </form>
+</div>
+{% endblock %}

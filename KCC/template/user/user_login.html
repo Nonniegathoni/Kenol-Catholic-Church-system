@@ -1,0 +1,24 @@
+{% extends "user_user_index.html" %} {% block title%}Login{% endblock%}
+{% block content %}
+<div class="login_content">
+    <h2>User Login in</h2>
+    <div class="login_image">
+        <img src="{{url_for('static', filename='registeruser.jpg')}}">
+    </div>
+    <form method="post" class="login">
+        <div>
+            <input type="tel" name="phone" required="">
+            <label>Phone</label>
+        </div>
+        <div>
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+        <div>
+            <span>
+                <button type="submit">Sign Up</button>
+            </span>
+        </div>
+    </form>
+</div>
+{% endblock %}

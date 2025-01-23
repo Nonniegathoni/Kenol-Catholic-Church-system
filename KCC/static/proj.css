@@ -1,0 +1,1019 @@
+body{
+    background-color: #243b55;
+}
+div.navigation{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 1.5px;
+    justify-content: space-around;
+}
+div.navigation a{
+    font-size: .7rem;
+    text-decoration: none;
+    text-decoration-color: black;
+
+}
+/*ADMIN HOME*/
+div.admin_home_content{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: max-content;
+    width: 90%;
+}
+div.admin_home_content div.container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    background-color: aqua;
+    height: 100%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding: 40px;
+
+}
+div.admin_home_content div.container div{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    flex-grow: 1;
+}
+div.admin_home_content div.container div img{
+    align-self: center;
+    width: 150px;
+}
+
+/*ADMIN SIGNUP*/
+div.signup_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+    background-color: burlywood;
+    text-align: center;
+}
+div.signup_content h2{
+    color: aqua;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+div.signup_content form div.signup_image{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+div.signup_content div.signup_image img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+div.signup_content form{
+    position:absolute;
+    height: 40px;
+    left: 10%;
+    width: 80%;
+}
+div.signup_content form div{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+div.signup_content form div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 80%;
+}
+div.signup_content form div label{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: capitalize;
+}
+div.signup_content form div input:focus~label{
+    top: -20px;
+    left: 0;
+    color: cadetblue;
+    font-size: 0.8rem;
+
+}
+div.signup_content form div input:valid~label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 0.6rem;
+}
+div.signup_content form div button{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background-color: #03e9f4;
+}
+
+/*ADMIN LOGIN*/
+div.login_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: burlywood;
+    text-align: center;
+}
+div.login_content h2{
+    color: aqua;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+div.login_content form div.login_image{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+div.login_content div.login_image img{
+    height: 50px;
+    width: 50px;
+    align-self: center;
+}
+
+div.login_content form{
+    position:absolute;
+    height: 40px;
+    left: 10%;
+    width: 80%;
+}
+div.login_content form div{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+div.login_content form div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 80%;
+}
+div.login_content form div label{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: capitalize;
+}
+div.login_content form div input:focus~label{
+    top: -20px;
+    left: 0;
+    color: cadetblue;
+    font-size: 0.8rem;
+
+}
+div.login_content form div input:valid~label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 0.6rem;
+}
+div.login_content form div button{
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color: #03e9f4;
+}
+
+/*UPLOAD ANNOUNCEMENT*/
+div.upload{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: #16a3c036;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+div.upload form{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+div.upload form div{
+   margin: 10px;
+}
+div.upload form div input.file{
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    height: 100px;
+    padding: 40px;
+    align-items: center;
+ }
+
+ /*BAPTISM TABLE*/
+ div.admin_baptism_booking_content{
+    position: absolute;
+    top: 10%;
+    background-color: white;
+ }
+ div.admin_baptism_booking_content table{
+    width: 100%;
+    border-collapse: collapse;
+ }
+ div.admin_baptism_booking_content table thead tr th{
+    font-size: 12px;
+    color: black;
+ }
+
+
+ div.admin_baptism_booking_content table tbody tr:nth-child(even){
+    background-color: aliceblue;
+    font-size: 12px;
+    text-align: center;
+ }
+ div.admin_baptism_booking_content table tbody tr:nth-child(odd){
+    background-color:antiquewhite;
+    font-size: 12px;
+    text-align: center;
+ }
+ div.admin_baptism_booking_content table tbody tr:hover{
+    background-color: rgba(38, 181, 194, 0.877);
+ }
+
+
+/*Mass Table*/
+div.admin_mass_booking_content{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    width: 800px;   
+}
+div.admin_mass_booking_content h2{
+    text-align: center;
+
+}
+div.admin_mass_booking_content h2:hover{
+    transition:
+        0.35s font-weight,
+        0.35s color ;
+
+}
+div.admin_mass_booking_content table{
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+div.admin_mass_booking_content table tr{
+    border: 1px solid black;
+}
+div.admin_mass_booking_content table thead tr th{
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+div.admin_mass_booking_content table tbody tr:nth-child(even){
+    background-color: aliceblue;
+    font-size: 1rem;
+    text-align: center;
+ }
+ div.admin_mass_booking_content table tbody tr:nth-child(odd){
+    background-color:antiquewhite;
+    font-size: 1rem;
+    text-align: center;
+ }
+ div.admin_mass_booking_content table tbody tr:hover{
+    background-color: rgba(38, 181, 194, 0.877);
+ }
+
+
+ /*USERS*/
+ /*USER HOME*/
+ div.home_content{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: max-content;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: teal;
+    object-fit: contain;
+ }
+ div.home_content h3{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+ }
+ div.home_content div.image{
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-image: url('church.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 500px;
+ }
+ div.home_content div.image h1{
+    text-align: justify;
+    font-size: 3rem;
+    margin-top: 15%;
+    margin-left: 7%;
+ }
+
+ div.home_content div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    object-fit: contain;
+    background-color: burlywood;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 5px;
+ }
+ div.home_content div div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ div.home_content div div img{
+  min-height: 100px;
+  max-width: 150px;
+  margin: 10px;
+  object-fit: contain;
+ }
+
+ div.home_content div div p{
+    box-sizing: border-box;
+    max-width: 300px;
+    margin: 1rem;
+    text-align: justify;
+}
+
+/*Baptism Booking*/
+div.baptism_booking_content{
+    position: absolute;
+    top: 15%;
+    transform: translate(-20% -20%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: burlywood;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+div.baptism_booking_content h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+div.baptism_booking_content div form{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+div.baptism_booking_content div form div{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 300px;
+}
+div.baptism_booking_content div div button{
+    margin: 20px;
+    align-self: center;
+    padding: 10px;
+    height: 30px;
+    width: 100px;
+    background-color: teal;
+    border: none;
+    outline: none;
+}
+div.baptism_booking_content div form div h3{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+div.baptism_booking_content div form div div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 80%;
+    align-self: center;
+
+}
+div.baptism_booking_content div form div div label{
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: purple;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: uppercase;
+    margin-left: 30px;
+
+}
+
+/*CONFIRMATION BOOKING*/
+div.confirmation_booking_content{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-20% -20%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #03e9f4;
+    width: 700px;
+    margin-bottom: 20px;
+    background-image: url('confirmation.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+div.confirmation_booking_content h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+
+div.confirmation_booking_content div form{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/*MASS BOOKINGS*/
+div.mass_booking_content{
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    background-color: burlywood;
+    width: 400px;
+    height: 450px;
+    align-items: center;
+}
+div.mass_booking_content h2{
+    text-transform: uppercase;
+    text-align: center;
+    top: 10%;
+
+}
+div.mass_booking_content form{
+    margin: 20px;
+}
+
+div.mass_booking_content form div{
+    position: absolute;
+    margin: 40px;
+}
+div.mass_booking_content form div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+div.mass_booking_content form div label{
+    position: relative;
+    top: 0;
+    left:0;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: purple;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: capitalize;
+}
+div.mass_booking_content form div input:focus~label{
+    top: -20px;
+    left: 0;
+    color: cadetblue;
+    font-size: 0.8rem;
+}
+div.mass_booking_content form div input:valid~label{
+    top: -20px;
+    left: 0;
+    color: cadetblue;
+    font-size: 0.8rem;
+}
+div.mass_booking_content form div button{
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    background-color: #03e9f4;
+}
+
+/*ABOUT US*/
+div.aboutus_content{
+    position:absolute;
+    top: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10;
+    background-color: #2a5558;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+div.aboutus_content h3{
+    margin-left: 10px;
+    font-size: 1rem;
+    text-align: left;
+    color: rgba(115, 223, 218, 0.858);
+}
+div.aboutus_content div h3{
+    margin-left: 10px;
+    font-size: 1rem;
+    text-align: start;
+    color: rgb(69, 202, 239);
+}
+div.aboutus_content div p{
+    margin-left: 10px;
+    font-size: 1rem;
+    text-align:justify;
+    color:black;
+    box-sizing: border-box;
+    max-width: 300px;
+}
+div.aboutus_content div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+    gap: 5px;
+    margin: 10px;
+    background-color: burlywood;
+}
+div.aboutus_content div div{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    gap: 2px;
+    flex-grow: 1;
+}
+div.aboutus_content div img{
+    max-height: 300px;
+    max-width: 400px;
+    object-fit: contain;
+    margin-left: 30px;
+}
+div.aboutus_content div div img{
+    max-height: 300px;
+    max-width: 300px;
+    object-fit: contain;
+    margin-left: 30px;
+}
+
+
+/*WORSHIP*/
+div.worship_content{
+    position: absolute;
+    top: 10%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 8px;
+    justify-content: space-around;
+    background-color: teal;
+}
+div.worship_content div{
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 5px;
+    background-color: burlywood;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: start;
+    justify-content: start;
+    flex-grow: 1;
+    object-fit: contain;
+
+}
+div.worship_content div div.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-grow: 1;
+    gap: 2px;
+}
+div.worship_content div div.container div{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    align-items: baseline;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    background-color: white;
+}
+div.worship_content div div.container div div{
+    display: flex;
+    flex-direction: column;
+}
+div.worship_content div div.container p{
+    font-size: 1rem;
+    text-align:justify;
+    color:black;
+    box-sizing: border-box;
+    margin-left: 20px;
+    max-width: 600px;
+}
+div.worship_content div div img{
+    max-height:200px;
+    width: 150px;
+    object-fit: contain;
+}
+div.worship_content div img{
+    height:300px;
+    width: 200;
+    object-fit: contain;
+}
+
+/*MINISTRIES*/
+div.ministries_content{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color:teal;
+    position: absolute;
+    top: 10%;
+    width:auto;
+    height:auto;
+    margin-bottom: 20px;
+    gap: 10px;
+    object-fit: contain;
+    flex-grow: 1;
+}
+div.ministries_content div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    object-fit: contain;
+    flex-grow: 1;
+}
+div.ministries_content div h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+div.ministries_content div div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin: 5px;
+    justify-content: start;
+    align-items: center;
+    flex-grow: 1;
+    object-fit: contain;
+}
+div.ministries_content div div p{
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: justify;
+} 
+div.ministries_content div div h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+div.ministries_content div div img{
+    object-fit: contain;
+    max-width: 250px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 100px;
+    margin: 10px;
+   
+}
+
+/*EVENTS*/
+div.event_content{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 10%;
+    width:100%;
+    margin-bottom: 20px;
+    gap: 10px;
+    background-color: teal;
+}
+
+div.event_content div{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+div.event_content div div{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    box-sizing: border-box;
+    justify-content: start;
+    border-radius: 5px;
+    background-color: burlywood;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+div.event_content div div img{
+    object-fit: contain;
+    max-width: 250px;
+    max-height: 300px;
+    min-width: 50px;
+    min-height: 100px;
+    margin: 10px;
+}
+
+/*OFFERORY*/
+div.donations{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: burlywood;
+    width: 300px;
+    height: 400px;
+}
+div.donations h3{
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+div.donations form{
+    position:absolute;
+    height: 40px;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+div.donations form div{
+    position:relative;
+    height: 40px;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+div.donations form div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+div.donations form div label{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: purple;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+div.donations form div input:focus~label{
+    top: -20px;
+    left: 0;
+    color: teal;
+    font-size: 0.8rem;
+
+}
+div.donations form div input:valid~label{
+    top: -20px;
+    left: 0;
+    color: teal;
+    font-size: 0.6rem;
+}
+div.donations form div button{
+    margin-top: 20px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    background-color: teal;
+    width: 100px;
+    padding: 10px;
+    height: 50px;
+
+}
+
+/*TITHE*/
+div.donation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: burlywood;
+    width: 300px;
+    height: 500px;
+    align-items: start;
+}
+div.donation h3{
+    margin-top: 1px;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+div.donation form{
+    position:absolute;
+    height: 40px;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+}
+div.donation form div{
+    position:relative;
+    height: 40px;
+    left: 10%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+div.donation form div input{
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+div.donation form div label{
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 10px 0;
+    font-size: 0.6rem;
+    color: purple;
+    pointer-events: none;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+div.donation form div input:focus~label{
+    top: -20px;
+    left: 0;
+    color: teal;
+    font-size: 0.8rem;
+
+}
+div.donation form div input:valid~label{
+    top: -20px;
+    left: 0;
+    color: teal;
+    font-size: 0.6rem;
+}
+div.donation form div button{
+    margin-top: 20px;
+    margin-left: 20px;
+    outline: none;
+    border: none;
+    background-color: teal;
+    width: 100px;
+    padding: 10px;
+    height: 50px;
+
+}
+/*READING*/
+div.user_dialy_readings{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: burlywood;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+div.user_dialy_readings h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 30px;
+}
+div.user_dialy_readings form{
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-left: 10px;
+}
+div.user_dialy_readings form div{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+div.user_dialy_readings form button{
+    margin-top: 20px;
+    margin-left: 60px;
+    outline: none;
+    border: none;
+    background-color: teal;
+    width: 100px;
+    padding: 10px;
+    height: 50px;
+
+}

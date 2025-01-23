@@ -1,0 +1,95 @@
+{% extends "user_user_index.html" %}{% block title %}BAPTISM BOOKINGS{% endblock %}
+{% block content %}
+<div class="baptism_booking_content">
+    <h2>BAPTISM BOOKING</h2>
+    <div>
+        <form method="post">
+            <div>
+                <h3>Candidate's infomation</h3>
+                <div>
+                    <input type="text" name="candidate_firstname" required="">
+                    <label>First Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="text" name="candidate_lastname" required="">
+                    <label>Last Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="number" name="candidate_age" required="">
+                    <label>Age</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="date" name="date" required="">
+                </div>
+                <br><br>
+            </div>
+            
+            <div>
+                <h3>Guardian's infomation</h3>
+                <div>
+                    <input type="text" name="guardian_firstname" required="">
+                    <label>First Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="text" name="guardian_lastname" required="">
+                    <label>Last Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="tel" name="guardian_phone" required="">
+                    <label>Phone</label>
+                </div>
+                <br><br>
+
+            </div>
+            
+            <div>
+                <h3>Father's infomation</h3>
+                <div>
+                    <input type="text" name="father_firstname" required="">
+                    <label>First Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="text" name="father_lastname" required="">
+                    <label>Last Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="tel" name="father_phone" required="">
+                    <label>Phone</label>
+                </div>
+                <br><br>
+
+            </div>
+            <div>
+                <h3>Mother's infomation</h3>
+                <div>
+                    <input type="text" name="mother_firstname" required="">
+                    <label>First Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="text" name="mother_lastname" required="">
+                    <label>Last Name</label>
+                </div>
+                <br><br>
+                <div>
+                    <input type="tel" name="mother_phone" required="">
+                    <label>Phone</label>
+                </div>
+                <br><br>
+
+            </div>
+            
+        </form>
+        <div>
+            <button type="submit">SEND</button>
+        </div>
+    </div>
+</div>
+{% endblock%}

@@ -1,0 +1,65 @@
+{% extends "admin_admin_index.html" %} {% block title%}ADMIN_HOME{% endblock%}
+{% block content %}
+<div class="admin_home_content">
+    <div class="container">
+        <div>
+            <a href="/registeruser">
+                <h3>REGISTER USERS</h3>
+                <img src="{{url_for('static', filename='registeruser.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/registeradmin">
+            <h3>REGISTER ADMIN</h3>
+            <img src="{{url_for('static', filename='registeradmin.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/manageusers">
+            <h3>MANAGE USERS</h3>
+            <img src="{{url_for('static', filename='usermanagement.jpg')}}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <a href="/massbookings">
+            <h3>MASS BOOKINGS</h3>
+            <img src="{{url_for('static', filename='mass.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/baptismbookings">
+            <h3>BAPTISM BOOKINGS</h3>
+            <img src="{{url_for('static', filename='baptism.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/confirmationbooking">
+            <h3>CONFIRMATION BOOKINGS</h3>
+            <img src="{{url_for('static', filename='confirmation.jpg')}}" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <a href="/postreading">
+            <h3>POST READING</h3>
+            <img src="{{url_for('static', filename='postreading.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/postannouncement">
+            <h3>POST ANNOUNCEMENT</h3>
+            <img src="{{url_for('static', filename='post_announcement.jpg')}}" alt="">
+            </a>
+        </div>
+        <div>
+            <a href="/checktithe">
+            <h3>TITHE CHECK</h3>
+            <img src="{{url_for('static', filename='tithe.jpg')}}" alt="">
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

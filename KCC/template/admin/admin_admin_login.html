@@ -1,0 +1,23 @@
+{% extends "admin_admin_index.html" %} {% block title%}LOGIN{% endblock%}
+{% block content %}
+<div class="login_content">
+    <h2>Admin login</h2>
+    <div class="login_image">
+        <img src="{{url_for('static', filename='registeruser.jpg')}}">
+    </div>
+    <form method="post" class="login">
+        <div>
+            <input type="email" name="email" required="">
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+        <br><br>
+        <span>
+            <button type="submit">Sign Up</button>
+        </span>
+    </form>
+</div>
+{% endblock %}

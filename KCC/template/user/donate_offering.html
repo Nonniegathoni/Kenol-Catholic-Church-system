@@ -1,0 +1,19 @@
+{% extends "user_user_index.html" %}{% block title %}DONATION_OFFERTORY {% endblock %}
+{% block content %}
+<div class="donations">
+    <h3>GIVE OFFERTORY</h3>
+    <form method="post" action="/checkout">
+        <div>
+            <input type="number">
+            <label>Amount</label>
+        </div>
+        <div>
+            <input type="number">
+            <label>Phone</label>
+        </div>
+        <div>
+            <button type="submit">CheckOUt</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

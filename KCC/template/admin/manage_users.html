@@ -1,0 +1,33 @@
+{% extends "admin_admin_index.html" %} {% block title%}Manage_users{% endblock%}
+{% block content %}
+<div class="admin_mass_booking_content">
+    <h2>USERS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>FIRST_NAME</th>
+                <th>LAST_NAME</th>
+                <th>S.C.C</th>
+                <th>GROUP</th>
+                <th>PHONE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if user %}
+                {% for user in user %}
+                    <tr>
+                        <td>{{user.id}}</td>
+                        <td>{{user.first_name}}</td>
+                        <td>{{user.last_name}}</td>
+                        <td>{{user.small_christian_community}}</td>
+                        <td>{{user.group}}</td>
+                        <td>{{user.phone}}</td>
+                        
+                    </tr>
+                {% endfor %}
+            {% endif%}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

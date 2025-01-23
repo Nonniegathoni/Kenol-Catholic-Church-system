@@ -1,0 +1,45 @@
+{% extends "admin_admin_index.html" %} {% block title%}CONFIRMATION{% endblock%}
+{% block content %}
+<div class="admin_baptism_booking_content">
+    <table>
+        <thead>
+            <tr>
+                <th>CANDIDATE FIRST_NAME</th>
+                <th>CANDIDATE LAST_NAME</th>
+                <th>CANDIDATE AGE</th>
+                <th>DATE OF BOOKING</th>
+                <th>GUARDIAN FIRST_NAME</th>
+                <th>GUARDIAN LAST_NAME</th>
+                <th>GUARDIAN PHONE</th>
+                <th>FATHER FIRST_NAME</th>
+                <th>FATHER LAST_NAME</th>
+                <th>FATHER PHONE</th>
+                <th>MOTHER FIRST_NAME</th>
+                <th>MOTHER LAST_NAME</th>
+                <th>MOTHER PHONE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if confirmationbooking %}
+                {% for confirmationbooking in confirmationbooking %}
+                    <tr>
+                        <td>{{confirmationbooking.candidate_f_name}}</td>
+                        <td>{{confirmationbooking.candidate_l_name}}</td>
+                        <td>{{confirmationbooking.candidate_age}}</td>
+                        <td>{{confirmationbooking.date}}</td>
+                        <td>{{confirmationbooking.guardian_f_name}}</td>
+                        <td>{{confirmationbooking.guardian_l_name}}</td>
+                        <td>{{confirmationbooking.guardian_phone}}</td>
+                        <td>{{confirmationbooking.father_f_name}}</td>
+                        <td>{{confirmationbooking.father_l_name}}</td>
+                        <td>{{confirmationbooking.father_phone}}</td>
+                        <td>{{confirmationbooking.mother_f_name}}</td>
+                        <td>{{confirmationbooking.mother_l_name}}</td>
+                        <td>{{confirmationbooking.mother_phone}}</td>
+                    </tr>
+                {% endfor %}
+            {% endif%}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

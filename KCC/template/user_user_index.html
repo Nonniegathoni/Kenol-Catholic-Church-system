@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='proj.css')}}">
+        <title>{% block title %}Index page{% endblock%}</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="navigation">
+                <span>
+                    <a href="/">HOME</a>
+                </span>
+                <span>
+                    <a href="/aboutus">ABOUT US</a>
+                </span>
+                <span>
+                    <a href="/worship">WORSHIP</a>
+                </span>
+                <span>
+                    <a href="/ministries">MINISTRIES</a>
+                </span>
+                <span>
+                    <a href="/events">EVENT</a>
+                </span>
+                <span>
+                    <a href="/donatetithe">TITHE</a>
+                </span>
+                <span>
+                    <a href="/donateoffertory">OFFERTORY</a>
+                </span>
+                <span>
+                    <a href="/getreadings">READINGS</a>
+                </span>
+                <span>
+                    <a href="/weeklyannouncements">ANNOUNCEMENTS</a>
+                </span>
+                <span>
+                    <a href="/userbaptismbooking">BAPTISM_BOOKINGS</a>
+                </span>
+                <span>
+                    <a href="/usermassbooking">MASS_BOOKINGS</a>
+                </span>
+                <span>
+                    <a href="/userconfirmationbooking">CONFIRMATION_BOOKINGS</a>
+                </span>
+                <span>
+                    <a href="/userlogin">LOGIN</a>
+                </span>
+                <span>
+                    <a href="/usersignup">SIGNUP</a>
+                </span>
+                <span>
+                    <a href="/userlogout">LOGOUT</a>
+                </span>
+            </div>
+        </div>
+        <div class="content_container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

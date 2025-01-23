@@ -1,0 +1,23 @@
+{% extends "admin_admin_index.html" %}
+{% block title %}POST_DAILY_READINGS{% endblock %}
+{% block content %}
+<div class="upload">
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <input type="date" name="date" required>
+            <br><br>
+        </div>
+        <div>
+            <label>Readings:</label>
+        </div>
+        <div>
+            
+            <input class="file" type="file" name="file" accept=".pdf" required="">
+        </div>
+        <br>
+        <div>
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

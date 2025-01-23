@@ -1,0 +1,42 @@
+{% extends "admin_admin_index.html" %} {% block title%}REGISTER_ADMIN{% endblock%}
+{% block content %}
+<div class="signup_content">
+    <h2>Admin sign up</h2>
+    <div class="signup_image">
+        <img src="{{url_for('static', filename='registeruser.jpg')}}">
+    </div>
+    <form method="post" class="signup">
+        
+        <div>
+            <input type="text" name="firstname" required="">
+            <label>First Name</label>
+        </div>
+        <div>
+            <input type="text" name="lastname" required="">
+            <label>Last Name</label>
+        </div>
+        <div>
+            <input type="text" name="designation" required="">
+            <label>designation</label>
+        </div>
+        <div>
+            <input type="email" name="email" required="">
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="tel" name="phone" required="">
+            <label>Phone</label>
+        </div>
+        <div>
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+      
+        <div>
+            <span>
+                <button type="submit">ADD</button>
+            </span>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "admin_admin_index.html" %} {% block title%}BAPTISM_BOOKING{% endblock%}
+{% block content %}
+<div class="admin_baptism_booking_content">
+    <table>
+        <thead>
+            <tr>
+                <th>CANDIDATE FIRST_NAME</th>
+                <th>CANDIDATE LAST_NAME</th>
+                <th>CANDIDATE AGE</th>
+                <th>DATE OF BOOKING</th>
+                <th>GUARDIAN FIRST_NAME</th>
+                <th>GUARDIAN LAST_NAME</th>
+                <th>GUARDIAN PHONE</th>
+                <th>FATHER FIRST_NAME</th>
+                <th>FATHER LAST_NAME</th>
+                <th>FATHER PHONE</th>
+                <th>MOTHER FIRST_NAME</th>
+                <th>MOTHER LAST_NAME</th>
+                <th>MOTHER PHONE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if baptismbooking %}
+                {% for baptismbooking in baptismbooking %}
+                    <tr>
+                        <td>{{baptismbooking.candidate_f_name}}</td>
+                        <td>{{baptismbooking.candidate_l_name}}</td>
+                        <td>{{baptismbooking.candidate_age}}</td>
+                        <td>{{baptismbooking.date}}</td>
+                        <td>{{baptismbooking.guardian_f_name}}</td>
+                        <td>{{baptismbooking.guardian_l_name}}</td>
+                        <td>{{baptismbooking.guardian_phone}}</td>
+                        <td>{{baptismbooking.father_f_name}}</td>
+                        <td>{{baptismbooking.father_l_name}}</td>
+                        <td>{{baptismbooking.father_phone}}</td>
+                        <td>{{baptismbooking.mother_f_name}}</td>
+                        <td>{{baptismbooking.mother_l_name}}</td>
+                        <td>{{baptismbooking.mother_phone}}</td>
+                    </tr>
+                {% endfor %}
+            {% endif%}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

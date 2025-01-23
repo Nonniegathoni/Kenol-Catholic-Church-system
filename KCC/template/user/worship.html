@@ -1,0 +1,96 @@
+{% extends "user_user_index.html" %} {% block title%}WORSHIP{% endblock%}
+{% block content %}
+<div class="worship_content">
+    <div>
+        <div class="container">
+            <h3>ADORATION</h3>
+           <p>Adoration in the Catholic Church is a spiritual practice that holds profound significance in the worship and devotion of believers. Centered around the Eucharist, adoration is an act of reverent contemplation and worship directed towards the consecrated host, which Catholics believe to be the true presence of Jesus Christ. Typically held in a sacred space, such as an adoration chapel, the faithful gather to express their love, gratitude, and devotion to Christ, who is believed to be present in the Blessed Sacrament. Adoration often involves quiet reflection, prayer, and a sense of awe before the divine. The practice fosters a deep connection with the spiritual essence of Catholicism, providing a sacred moment for individuals to draw closer to God and experience His grace in a profound and personal way. Adoration is not only a communal activity but also a deeply personal encounter with the divine, inviting believers to strengthen their faith and find solace in the presence of the Holy Eucharist.</p>
+        </div>
+        <div class="container">
+            <h3>ROSARY MYSTRIES</h3>
+            <ol>
+                <div>
+                <div>
+                    <li>Joyful Mysteries (Mondays and Saturdays):</li>
+                    <ul>
+                        <li>The Annunciation</li>
+                        <li>The Visitation</li>
+                        <li>The Nativity</li>
+                        <li>The Presentation</li>
+                        <li>The Finding of Jesus in the Temple</li>
+                    </ul>
+                </div>
+                <div>
+                    <li>Sorrowful Mysteries (Tuesdays and Fridays):</li>
+                    <ul>
+                        <li>The Agony in the Garden</li>
+                        <li>The Scourging at the Pillar</li>
+                        <li>The Crowning with Thorns</li>
+                        <li>The Carrying of the Cross</li>
+                        <li>The Crucifixion</li>
+                    </ul>
+                </div>
+                <div>
+                    <li>Glorious Mysteries (Wednesdays and Sundays):</li>
+                        <ul>
+                        <li>The Resurrection</li>
+                        <li>The Ascension</li>
+                        <li>The Descent of the Holy Spirit</li>
+                        <li>The Assumption</li>
+                        <li>The Coronation</li>
+                    </ul>
+                </div>
+                <div>
+                    <li>Glorious Mysteries (Wednesdays and Sundays):</li>
+                    <ul>
+                        <li>The Baptism in the Jordan</li>
+                        <li>The Wedding at Cana</li>
+                        <li>The Proclamation of the Kingdom of God</li>
+                        <li>The Transfiguration</li>
+                        <li>The Institution of the Eucharist</li>
+                    </ul>
+                </div> 
+                </div>   
+            </ol>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <h3>SPRITUALLY ENRICH YOURSELF</h3>
+        <img src="{{url_for('static', filename='massbooking.jpg')}}">
+        <ol>
+            <a href="https://youtu.be/Xye3ZcfWxuM?si=4HYu61KrgaNks5qW" taget="_blank"><li>STAGES OF SPIRIRTUAL LIFE</li></a>
+            <a href="https://youtu.be/DNFpcUp5nBw?si=C1morhjbzgWeyugc" taget="_blank"><li>KNOW MORE ABOUT SAINTS</li></a>
+            <a href="https://youtu.be/Xye3ZcfWxuM?si=4HYu61KrgaNks5qW" taget="_blank"><li>MORNING PRAYERS</li></a>
+            <a href="https://youtu.be/ClwGc_ZPmlQ?si=RbY-KUfERf3yhQfP" taget="_blank"><li>UPLIFTING SONGS</li></a>
+            <a href="https://www.youtube.com/live/olUO2P0UmyA?si=NXRc2zzEmphvA_1G" taget="_blank"><li>LIVE STREAM MASS</li></a>
+        </ol>
+        
+        
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const audioPlayer = document.getElementById('audio-player');
+    const audioListItems = document.querySelectorAll('.audio-list a');
+
+    audioListItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            // Get the direct URL of the audio file from the 'href' attribute
+            const audioUrl = this.href;
+            
+            // Set the source of the audio player to the direct URL
+            audioPlayer.src = audioUrl;
+            
+            // Load and play the audio
+            audioPlayer.load();
+            audioPlayer.play();
+        });
+    });
+});
+
+</script>
+{% endblock %}

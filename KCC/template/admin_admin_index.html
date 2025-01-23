@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='proj.css')}}">
+        <title>{% block title %}Index page{% endblock%}</title>
+    </head>
+    <body>
+        <div class="nav_container">
+            <div class="navigation">
+                <span>
+                    <a href="/adminhome">HOME</a>
+                </span>
+                <span>
+                    <a href="/registeradmin">REGISTER ADMIN</a>
+                </span>
+                <span>
+                    <a href="/registeruser">REGISTER USER</a>
+                </span>
+                <span>
+                    <a href="/baptismbookings">BAPTISM BOOKINGS</a>
+                </span>
+                <span>
+                    <a href="/confirmationbooking">CONFIRMATION BOOKINGS</a>
+                </span>
+                 <span>
+                    <a href="/massbookings">MASS BOOKINGS</a>
+                </span>
+                <span>
+                    <a href="/postreading">POST DAILY READINGS</a>
+                </span>
+                <span>
+                    <a href="/postannouncement">POST WEEKLY ANNOUNCEMENTS</a>
+                </span>
+                <span>
+                    <a href="/manageusers">MANAGE USERS</a>
+                </span>
+                <span>
+                    <a href="/checktithe">TITHE CONTRIBUTION</a>
+                </span>
+                <span>
+                    <a href="/adminlogin">LOGIN</a>
+                </span>
+                <span>
+                    <a href="/adminsignup">SIGNUP</a>
+                </span>
+                <span>
+                    <a href="/adminlogout">LOGOUT</a>
+                </span>
+            </div>
+        </div>
+        <div class="content_container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>

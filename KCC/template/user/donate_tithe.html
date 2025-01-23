@@ -1,0 +1,27 @@
+{% extends "user_user_index.html" %}{% block title %}DONATION_TITHE {% endblock %}
+{% block content %}
+<div class="donation">
+    <form method="post" action="/checkout">
+        <h3>give tithe</h3>
+        <div>
+            <input type="text" name="firstname">
+            <label>Firstname</label>
+        </div>
+        <div>
+            <input type="text" name="firstname">
+            <label>Lastname</label>
+        </div>
+        <div>
+            <input type="number" name="phone">
+            <label>Phone</label>
+        </div>
+        <div>
+            <input type="number" name="amount">
+            <label>Amount</label>
+        </div>
+        <div>
+            <a href=""><button type="submit">CheckOUt</button></a>
+        </div>
+    </form>
+</div>
+{% endblock %}

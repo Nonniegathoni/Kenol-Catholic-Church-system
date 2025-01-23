@@ -1,0 +1,32 @@
+{% extends "admin_admin_index.html" %} {% block title%}MASS_BOOKING{% endblock%}
+{% block content %}
+<div class="admin_mass_booking_content">
+    <h2>MASS BOOKINGS</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>BOOKING NUMBER</th>
+                <th>FIRST_NAME</th>
+                <th>LAST_NAME</th>
+                <th>S.C.C</th>
+                <th>PHONE</th>
+                <th>DATE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if massbooking %}
+                {% for massbooking in massbooking %}
+                    <tr>
+                        <td>{{massbooking.id}}</td>
+                        <td>{{massbooking.f_name}}</td>
+                        <td>{{massbooking.l_name}}</td>
+                        <td>{{massbooking.scc}}</td>
+                        <td>{{massbooking.phone}}</td>
+                        <td>{{massbooking.date}}</td>
+                    </tr>
+                {% endfor %}
+            {% endif%}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

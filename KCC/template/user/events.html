@@ -1,0 +1,43 @@
+{% extends "user_user_index.html" %}{% block title %}EVENTS{% endblock %}
+{% block content %}
+<div class="event_content">
+    <h2>UPCOMING EVENTS</h2>
+    <div class="upcoming_events">
+        
+        <div>
+            <h3>CHRISTMASS NIGHT VIRGIL </h3>
+                <img src="{{url_for('static', filename='upcoming.jpg')}}">
+                <p><h3>DATE: 24 DECECEMBER 2023</h3><h3>VENUE: KENOL CATHOLIC CHURCH</h3><h3>TIME: 8:00 AM</h3></p>
+        </div>
+        <div>
+            <h3>CHOIR DIOCESS COMPETITIONS </h3>
+            <img src="{{url_for('static', filename='choir.jpg')}}">
+            <p><h3>DATE: 16 DECECEMBER 2023</h3><h3>VENUE: CATHEDRAL CMD</h3><h3>TIME: 8:00 AM</h3></p>
+        </div>
+        <div>
+            <h3>YOUTH TALENT SHOW</h3>
+            <img src="{{url_for('static', filename='youth.jpg')}}">
+            <p><h3>DATE: 17 DECECEMBER 2023</h3><h3>VENUE: KENOL ABORETUM</h3><h3>TIME: 9:00 AM</h3></p>
+        </div>
+    </div>
+    <h2>SPECIAL EVENTS</h2>
+    <div class="special_events">
+       
+        <div>
+            <h3>BAPTISM</h3>
+            <img src="{{url_for('static', filename='baptism.jpg')}}">
+            <p><h3>DATE: 17 JANUARY 2023</h3><h3>VENUE: KENOL CHURCH</h3><h3>TIME: 9:00 AM</h3></p>
+        </div>
+        <div>
+            <h3>CMA HARAMBEE</h3>
+            <img src="{{url_for('static', filename='cma.jpg')}}">
+            <p><h3>DATE: 24 JANUARY 2023</h3><h3>VENUE: KENOL CHURCH</h3><h3>TIME: 9:00 AM</h3></p>
+        </div>
+        <div>
+            <h3>FAMILY DAY</h3>
+            <img src="{{url_for('static', filename='mass.jpg')}}">
+            <p><h3>DATE: 24 MARCH 2023</h3><h3>VENUE: KENOL ABORETUM</h3><h3>TIME: 9:00 AM</h3></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

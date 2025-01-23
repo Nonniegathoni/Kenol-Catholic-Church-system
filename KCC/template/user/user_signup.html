@@ -1,0 +1,44 @@
+{% extends "user_user_index.html" %} {% block title%}SIGN_UP{% endblock%}
+{% block content %}
+<div class="signup_content">
+    <h2>User sign up</h2>
+    <div class="signup_image">
+        <img src="{{url_for('static', filename='registeruser.jpg')}}">
+    </div>
+    <form method="post" class="sigup">
+        <div>
+            <input type="text" name="firstname" required="">
+            <label>First Name</label>
+        </div>
+        <div>
+            <input type="text" name="lastname" required="">
+            <label>Last Name</label>
+        </div>
+        <div>
+            <input type="text" name="group" required="">
+            <label>Group</label>
+        </div>
+        <div>
+            <input type="text" name="scc" required="">
+            <label>SCC</label>
+        </div>
+        <div>
+            <input type="email" name="email" required="">
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="tel" name="phone" required="">
+            <label>Phone</label>
+        </div>
+        <div>
+            <input type="password" name="password" required="">
+            <label>Password</label>
+        </div>
+        <div>
+            <span>
+                <button type="submit">Sign Up</button>
+            </span>
+        </div>
+    </form>
+</div>
+{% endblock %}
